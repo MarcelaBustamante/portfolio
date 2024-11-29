@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>My Portfolio</title>
+<meta name="description" content="My portfolio +12 years of experience in Software Engineering">
+<meta name="theme-colosr" content="#115AE">
+<style>
+    body {
+        background: rgb(206, 217, 225);
+    }
+</style>
+</style>
+
+    </head>
+    <body>
+        <nav>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a> <!-- Link to internal page -->
+            <a href="https://www.google.com"
+                target="_blank"
+                rel="noreferrer">Contact</a> <!-- Link to external page -->
+          </nav>
+        <h1>My Portfolio</h1>
+        <p>Welcome to my portfolio,+12 years of experience in the industry. I'm a <strong>developer from Colombia</strong> with a passion for web design and development.</p> 
+        
+        <h2 id="experience">Employment history</h2>
+        <ul>
+            <li>2023 - Present - Junior Software Developer at <a href="https://www.tiendanube.com/">Tienda Nube</a></li>
+            <li>2020 - 2023 - Software Engineer at <a href="https://www.medallia.com/">Medallia</a></li>
+            <li>2014 - 2020 - Software Engineer at <a href="https://www.redlink.com.ar/">RedLink</a></li>
+        </ul>
+        <a download href="images/yo.jpg">
+            <img src="images/yo.jpg" alt="Photo with my face" width=250 height=250>
+        </a>
+    <h2 id="projects">My Projects</h2>
+    <aside>
+        <h3>My favorite technologies</h3>
+        <ol>
+            <li>Html</li>
+            <li>CSS</li>
+            <li>Javascript</li>
+            <li>React</li>
+            <li>Typescript</li>
+            <li>Java</li>
+        </ol>
+    </aside>
+    <section>
+        <article>
+            <header>
+                <h4>My favorite projects</h4>
+                <p>Here are some of my favorite projects that I've worked on.</p>
+            </header>
+            <section>
+                <h2>Contact Form</h2>
+                <form method="post" action="/">
+                    <fieldset>
+                        <legend>Personal information</legend>
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" placeholder="July Bustamante" required>
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" placeholder="julymarcelabustamante@gmail.com" required>
+                        </div>
+                    </fieldset>
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+            <footer>
+                <small>Copyright © 2023 My Portfolio</small>
+                <a href="mailto:julymarcelabustamante@gmail.com">julymarcelabustamante@gmail.com</a>
+                <a href="https://github.com/julymarcelabustamante/julymarcelabustamante.github.io">GitHub</a>
+                <a href="whatsapp:+573233498563">Call me</a>
+            </footer>
+        </article>
+    </section>
+    <section>
+        <h4>My favorite song</h4>
+        <iframe style="width: 100%; aspect-ratio: 16/9;"
+         src="https://www.youtube.com/embed/6Ejga4kJUts?si=myuhB6ueCWXJ7C4J&amp;start=6" 
+         title="YouTube video player" frameborder="0" 
+         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+         referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         <video controls muted src="https://filesamples.com/samples/video/mp4/sample_960x400_ocean_with_audio.mp4" width="480" height="270"></video>
+    </section>
+   <div>
+       <dialog open id="mydialog">
+        <h4>Did you know about dialog tag?</h4>
+        <p>The dialog tag is used to create a dialog box or a popup window. It is an HTML element that is used to display information or prompt the user for input.</p>
+        <button id="close">Close</button>
+    </dialog>
+    <button id="show"> want more? click me</button>
+    <script>
+        const show = document.getElementById('show');
+        const dialog = document.getElementById('mydialog');
+        show.addEventListener('click', () => {
+            dialog.showModal();
+        });
+        const close = document.getElementById('close');
+        close.addEventListener('click', () => {
+            dialog.close();
+        });
+    </script>
+   </div>
+    </body>
+</html>
